@@ -119,9 +119,12 @@ The user should be able to see the list of tasks, add new ones, delete existing 
                Create a method "getTasksAsArray" which returns, and prints to the console an array containing the tasks as strings
             */
            function getTasksAsArray(){
-            let array = document.createElement("array")
-            let newText = document.getElementsByTagName ("li").value;
-            array.push()
+            let liNodes = document.getElementsByTagName("li")
+            let array = []
+            for (let li of liNodes){
+              array.push(li.innerText);
+            }
+            console.log(array)
            }
 
       /* EXERCISE 9:
