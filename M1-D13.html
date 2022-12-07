@@ -93,10 +93,11 @@ The user should be able to see the list of tasks, add new ones, delete existing 
       */
      
      function addNewTask() {
+       let newText = document.getElementById ("newTask");
        let li = document.createElement ("li")
-       let newText = document.getElementById ("newTask").value;
-       li.innerHTML = newText;
+       li.innerText = newText.value;
        ul.appendChild(li);
+       newText.value = ""
       }
 
       /* EXERCISE 6: 
@@ -117,11 +118,11 @@ The user should be able to see the list of tasks, add new ones, delete existing 
       /* EXERCISE 8: 
                Create a method "getTasksAsArray" which returns, and prints to the console an array containing the tasks as strings
             */
-          //  function getTasksAsArray(){
-          //   let array = document.createElement("array")
-          //   let newText = document.getElementById ("newTask").value;
-          //   array.push(newText)
-          //  }
+           function getTasksAsArray(){
+            let array = document.createElement("array")
+            let newText = document.getElementsByTagName ("li").value;
+            array.push()
+           }
 
       /* EXERCISE 9:
                Create a method "changeTaskBackgroundColor" which takes the color from the color picker with an 
